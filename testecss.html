@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<title> Listas com css </title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	#lista{
+		background: red;
+
+	}
+	#lista2{
+		background: darkblue;
+	}
+
+	div ul{
+		color: orange;
+	}
+	div ol{
+		color: white;
+	}
+	.negrito{
+		font-weight: bold;
+	}
+	p{
+		border-style: solid;
+		border-width: 3px;
+		border-top-color: darkgreen;
+		border-bottom-color: green;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	#posicao1{
+		background: black;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		z-index: 
+	}
+	#posicao2{
+		background: brown;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		z-index: 
+	}
+	</style>
+
+</head>
+<body>
+<div id="lista">
+	<ul> 
+		<li> Frutas </li>
+			<ol>
+				<li>Maca
+				<li>Melancia
+				<li>Morango
+				<li>Manga
+			</ol>
+	</ul>	<!-- Lista nao numerada -->
+</div>
+<div id="lista2">
+	<ol> 
+		<li> Regioes Brasil </li>
+			<ul>
+				<li>Santa Catarina
+				<li>Parana
+			</ul>
+	</ol>
+</div>
+<div id="posicao1"></div>
+<div id="posicao2"></div>
+<br>
+<p> Esta <span class=negrito>palavra </span>esta em negrito</p>
+</body>
+</html>
