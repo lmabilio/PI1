@@ -3,218 +3,173 @@
 <head>
 	<meta charset="utf-8">
 	<title> Formulario </title>
-	<style type="text/css">
-	body{
-		font-family: calibri;
-	}
-	#titulo{
-		border: 1px solid #68838B;	
-	}
-	#titulo tr td{
-		border: 1px solid #68838B;	
-		padding: 8px 8px 8px 8px;
-		border-spacing: 6px 6px 6px 6px;
-		border-collapse: collapse;
-		text-align: center;
-		color: #4682B4;
-		font-size: 40px;
-		text-align: center;
-	}
-	fieldset {
-  		padding: 1em;
-  		font:80%/1 sans-serif;
- 	}
-
-	</style>
+	<link rel="stylesheet" href="estilo.css" type="text/css">
 </head>
 <body>
-	<center>
-		<table id="titulo">
-		<tr>
-			<td align="center">Cadastro</font></td>
-		</tr>
-		</table>
-		<br>
+
+	<img src="imagens/banner.png" id="logo">
+
+	<div id="conteiner">
+
+		<div id="menu">
+			<nav  id="lista">
+				<ul>
+					<li><a href="index.html" target="_self">Home</a></li>
+					<li><a href="#" target="Principal">Atividades</a>
+						<ul>
+							<li><a href="atividade1.html" target="Principal">Atividade 1</a></li>
+							<li><a href="arquivo2.html" target="Principal">Atividade 2</a></li>
+							<li><a href="lista.html" target="Principal">Lista 1</a></li>
+							<li><a href="lista2.html" target="Principal">Lista 2</a></li>
+							<li><a href="tabela.html" target="Principal">Tabela</a></li>
+							<li><a href="som.html" target="Principal">Multimidia</a></li>
+						</ul>
+					</li>
+					<li><a href="calendario.html" target="Principal">Calendario</a></li>
+					<li><a href="formulario.html" target="_self">Formulario</a></li>
+					<li><a href="testecss.html" target="Principal">CSS</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
 		<form name="cadastro" method="post">
-			<fieldset align="left" style="width: 60%">
+			<fieldset>
 				<legend><b> Dados Pessoais</b></legend>
-					<table border=0 height="300" width="1000">
-						<tr>
-							<td colspan="2"><label>Nome: <input type="text" name="nome" size="60" maxlenght="60"> </label></td>
-							<td><label>Data Nasc.: <input type="date" name="nascimento"></label></td>
-						</tr>
-						<tr>
-							<td><label>RG: <input type="text" name="rg" size="10" maxlenght="9"> </label></td>
-							<td><label>CPF: <input type="text" name="cpf" size="12" maxlenght="11"> </label></td>
-							<td><label>Sexo:  <input type="radio" NAME="sexo" VALUE="masculino">Masculino <input type="radio" NAME="sexo" VALUE="masculino">Feminino<br> </label></td>
-						</tr>
-						<tr>
-							<td><label>Estado Civil: <input type="text" name="civil" size="20" maxlenght="20"> </label></td>
-							<td><label>Nacionalidade: <input type="text" name="nacionalidade" size="15" maxlenght="15"> </label></td>
-							<td><label>Naturalidade: <input type="text" name="nacionalidade" size="15" maxlenght="15"> </label></td>
-						</tr>						
-						<tr>
-							<td><label>Tel. Residencial: <input type="text" name="telres" size="10" maxlenght="10"> </label></td>
-							<td><label>Tel. Celular: <input type="text" name="telcel" size="10" maxlenght="10"> </label></td>
-							<td><label>Email: <input type="text" name="email" size="50" maxlenght="50"> </label></td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<label>Passatempos: <br><textarea cols=40 rows=5 name="passatempos"></textarea>
-							</td>
-						</tr>
-					</table>
+						<label>Nome: <input type="text" name="nome" size="60" maxlenght="60"> </label>
+						<label>Data Nasc.: <input type="date" name="nascimento"></label>
+						<label>RG: <input type="text" name="rg" size="10" maxlenght="9"> </label>
+						<label>CPF: <input type="text" name="cpf" size="12" maxlenght="11"> </label>&nbsp&nbsp&nbsp&nbsp
+						<label>Sexo:  <input type="radio" NAME="sexo" VALUE="masculino">Masculino <input type="radio" NAME="sexo" VALUE="masculino">Feminino</label>&nbsp&nbsp&nbsp&nbsp
+						<label>Estado Civil: <input type="text" name="civil" size="20" maxlenght="20"> </label><br>
+						<label>Res: <input type="text" name="telres" size="10" maxlenght="10"> </label>
+						<label>Cel: <input type="text" name="telcel" size="10" maxlenght="10"> </label>
+						<label>Email: <input type="text" name="email" size="50" maxlenght="50"> </label>
+						<label>Nacionalidade: <input type="text" name="nacionalidade" size="15" maxlenght="15"> </label>
+						<label>Naturalidade: <input type="text" name="nacionalidade" size="15" maxlenght="15"> </label><br>
+						<label>Passatempos: <br>
+						<textarea cols=40 rows=5 name="passatempos"></textarea>
 			</fieldset>
 			<br>
 
-			<fieldset align="left" style="width: 60%">
+			<fieldset>
 				<legend><b>Endereço</b></legend>
-					<table border=0 height="110" width="1000">
-						<tr>
-							<td colspan="2"><label>Logradouro: <input type="text" name="endereco" size="60" maxlenght="60"> </label></td>
-							<td colspan="2"><label>Num.: <input type="text" name="numero" size="8" maxlenght="8"> </label>
-								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-								<label>Compl.: <input type="text" name="complemento" size="20" maxlenght="20"> </label></td>
-						</tr>
-						<tr>
-							<td><label>Bairro: <input type="text" name="bairro" size="20" maxlenght="20"> </label></td>
-							<td><label>Cidade: <input type="text" name="cidade" size="15" maxlenght="15"> </label></td>
-							<td><label>Estado: <select name="estado">
-								<optgroup>
-									<option>AC</option>
-									<option>AL</option>
-									<option>AP</option>
-									<option>AM</option>
-									<option>BA</option>
-									<option>CE</option>
-									<option>DF</option>
-									<option>ES</option>
-									<option>GO</option>
-									<option>MA</option>
-									<option>MT</option>
-									<option>MS</option>
-									<option>MG</option>
-									<option>PA</option>
-									<option>PB</option>
-									<option selected>PR</option>
-									<option>PE</option>
-									<option>PI</option>
-									<option>RJ</option>
-									<option>RN</option>
-									<option>RS</option>
-									<option>RO</option>
-									<option>RR</option>
-									<option>SC</option>
-									<option>SP</option>
-									<option>SE</option>	
-									<option>TO</option>
-								</optgroup>
-								</select> </label></td>
-							<td><label>CEP: <input type="text" name="cep" size="10" maxlenght="9"> </label></td> 
-						</tr>
-					</table>
+					<label>Lograd.: <input type="text" name="endereco" size="60" maxlenght="60"> </label>
+					<label>Num.: <input type="text" name="numero" size="8" maxlenght="8"> </label>
+					<label>Compl.: <input type="text" name="complemento" size="20" maxlenght="20"> </label>
+					<label>Bairro: <input type="text" name="bairro" size="20" maxlenght="20"> </label>
+					<label>Cidade: <input type="text" name="cidade" size="15" maxlenght="15"> </label>
+					<label>CEP: <input type="text" name="cep" size="10" maxlenght="9"> </label> 
+					<label>Estado: <select name="estado">
+					<optgroup>
+						<option>AC</option>
+						<option>AL</option>
+						<option>AP</option>
+						<option>AM</option>
+						<option>BA</option>
+						<option>CE</option>
+						<option>DF</option>
+						<option>ES</option>
+						<option>GO</option>
+						<option>MA</option>
+						<option>MT</option>
+						<option>MS</option>
+						<option>MG</option>
+						<option>PA</option>
+						<option>PB</option>
+						<option selected>PR</option>
+						<option>PE</option>
+						<option>PI</option>
+						<option>RJ</option>
+						<option>RN</option>
+						<option>RS</option>
+						<option>RO</option>
+						<option>RR</option>
+						<option>SC</option>
+						<option>SP</option>
+						<option>SE</option>	
+						<option>TO</option>
+					</optgroup>
+					</select> </label>
+
 			</fieldset>
 			<br>
 
-			<fieldset align="left" style="width: 60%">
+			<fieldset>
 				<legend><b>Escolaridade</b></legend>
-					<table border=0 height="220" width="1000">
-						<tr>
-							<td><label>Grau de Escolaridade: <br>
+					<label>Grau de Escolaridade: <br>
 								<input type="radio" name="escola" value="medio">Ensino Médio<br>
 								<input type="radio" name="escola" value="supinc">Ensino Superior/Incompleto</label>
-							</td>
-							<td>
+
 								<br><input type="radio" name="escola" value="supcom">Ensino Superior/Completo<br>
 								<input type="radio" name="escola" value="especiali">Especialização</label>
-							</td>
-							<td>
+
 								<br><input type="radio" name="escola" value="mestrado">Mestrado<br>
-								<input type="radio" name="escola" value="doutorado">Doutorado</label>
-							</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td colspan="4"><label>Instituição: <input type="text" name="instituicao" size="95" maxlenght="60"> </label></td>
-						</tr>
-						<tr>
-							<td colspan="4"><label>Curso: <input type="text" name="curso" size="100" maxlenght="60"> </label></td>
-						</tr>
-						<tr>
-							<td colspan="2"><label>Mês/Ano de conclusão: <input type="month" name="mes"></label></td>
-							<td><label>Estado: <select name="estado">
-								<optgroup>
-									<option>AC</option>
-									<option>AL</option>
-									<option>AP</option>
-									<option>AM</option>
-									<option>BA</option>
-									<option>CE</option>
-									<option>DF</option>
-									<option>ES</option>
-									<option>GO</option>
-									<option>MA</option>
-									<option>MT</option>
-									<option>MS</option>
-									<option>MG</option>
-									<option>PA</option>
-									<option>PB</option>
-									<option selected>PR</option>
-									<option>PE</option>
-									<option>PI</option>
-									<option>RJ</option>
-									<option>RN</option>
-									<option>RS</option>
-									<option>RO</option>
-									<option>RR</option>
-									<option>SC</option>
-									<option>SP</option>
-									<option>SE</option>	
-									<option>TO</option>
-								</optgroup>
-								</select> </label></td>
-								<td><label>Cidade: <input type="text" name="cidade" size="15" maxlenght="15"> </label></td>
-						</tr>
-					</table>
+								<input type="radio" name="escola" value="doutorado">Doutorado</label><br><br>
+					
+					<label>Instituição: <input type="text" name="instituicao" size="95" maxlenght="60"> </label>
+					<label>Curso: <input type="text" name="curso" size="100" maxlenght="60"> </label>
+					<label>Estado: <select name="estado">
+					<optgroup>
+						<option>AC</option>
+						<option>AL</option>
+						<option>AP</option>
+						<option>AM</option>
+						<option>BA</option>
+						<option>CE</option>
+						<option>DF</option>
+						<option>ES</option>
+						<option>GO</option>
+						<option>MA</option>
+						<option>MT</option>
+						<option>MS</option>
+						<option>MG</option>
+						<option>PA</option>
+						<option>PB</option>
+						<option selected>PR</option>
+						<option>PE</option>
+						<option>PI</option>
+						<option>RJ</option>
+						<option>RN</option>
+						<option>RS</option>
+						<option>RO</option>
+						<option>RR</option>
+						<option>SC</option>
+						<option>SP</option>
+						<option>SE</option>	
+						<option>TO</option>
+					</optgroup>
+					</select> </label><br>
+					<label>Cidade: <input type="text" name="cidade" size="15" maxlenght="15"> </label>
+					<label>Mês/Ano de conclusão: <input type="month" name="mes"></label>
 			</fieldset>
 			<br>
 
-			<fieldset align="left" style="width: 60%">
+			<fieldset>
 				<legend><b>Dados Profissionais</b></legend>
-					<table border=0 height="400" width="1000">
-							<tr>
-							<td width="300"><label>Forma de Contratação: <br>
-								<input type="radio" name="contrato" value="estag">Estagiário<br>
-								<input type="radio" name="contrato" value="aprendiz">Jovem Aprendiz</label>
-							</td>
-							<td>
-								<br><input type="radio" name="contrato" value="contr">Contratado<br>
-								<input type="radio" name="contrato" value="registr">Registrado</label>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2"><label>Empresa: <input type="text" name="empresa" size="107" maxlenght="60"> </label></td>
-						</tr>
-						<tr>
-							<td colspan="2"><label>Setor: <input type="text" name="setor" size="111" maxlenght="60"> </label></td>
-						</tr>
-						<tr>
-							<td colspan="2"><label>Cargo Ocupado: <input type="text" name="cargo" size="100" maxlenght="60"> </label></td>
-						</tr>
-						<tr>
-							<td colspan="2"><label>Descrição do cargo: <br><textarea cols=40 rows=5 name="descrcargo"></textarea></td>
-						</tr>
-						<tr>
-							<td><label>Tempo de trabalho: <br></label>
-								<label>Entrada: <input type="date" name="entrada"></label></td>
-							<td><br><label>Saída: <input type="date" name="saida"></label></td>
-						</tr>
-					</table>
+					<label>Forma de Contratação: <br>
+						<input type="radio" name="contrato" value="estag">Estagiário<br>
+						<input type="radio" name="contrato" value="aprendiz">Jovem Aprendiz</label><br>
+						<input type="radio" name="contrato" value="contr">Contratado<br>
+						<input type="radio" name="contrato" value="registr">Registrado</label><br><br>
+					<label>Empresa: <input type="text" name="empresa" size="107" maxlenght="60"> </label>
+					<label>Setor: <input type="text" name="setor" size="111" maxlenght="60"> </label>
+					<label>Cargo: <input type="text" name="cargo" size="100" maxlenght="60"> </label>
+					<label>Entrada: <input type="date" name="entrada"></label>&nbsp&nbsp
+					<label>Saída: <input type="date" name="saida"></label><br>
+					<label>Descrição do cargo: <br><textarea cols=40 rows=5 name="descrcargo"></textarea>
 			</fieldset>
 			<!-- <label>URL: <input type="url" name="url" id="url"></label><br> -->
 			<input type="submit">
 			<input type="reset" value="Limpar tudo">
 		</form>
+
+		<div id="footer">
+			<img src="imagens/footer.png" id="imgfoot"></img>
+		</div>
+
+	</div>
+
 
 		
 </body>
