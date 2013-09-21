@@ -36,30 +36,30 @@
 		<form name="cadastro" method="post">
 			<fieldset>
 				<legend><b> Dados Pessoais</b></legend>
-						<label>Nome: <input type="text" name="nome" size="60" maxlenght="60"> </label>
+						<label>Nome: <input type="text" name="nome" size="60"> </label>
 						<label>Data Nasc.: <input type="date" name="nascimento"></label>
-						<label>RG: <input type="text" name="rg" size="10" maxlenght="9"> </label>
-						<label>CPF: <input type="text" name="cpf" size="12" maxlenght="11"> </label>&nbsp&nbsp&nbsp&nbsp
-						<label>Sexo:  <input type="radio" NAME="sexo" VALUE="masculino">Masculino <input type="radio" NAME="sexo" VALUE="masculino">Feminino</label>&nbsp&nbsp&nbsp&nbsp
-						<label>Estado Civil: <input type="text" name="civil" size="20" maxlenght="20"> </label><br>
-						<label>Res: <input type="text" name="telres" size="10" maxlenght="10"> </label>
-						<label>Cel: <input type="text" name="telcel" size="10" maxlenght="10"> </label>
-						<label>Email: <input type="text" name="email" size="50" maxlenght="50"> </label>
-						<label>Nacionalidade: <input type="text" name="nacionalidade" size="15" maxlenght="15"> </label>
-						<label>Naturalidade: <input type="text" name="nacionalidade" size="15" maxlenght="15"> </label><br>
-						<label>Passatempos: <br>
+						<label>RG: <input type="text" name="rg" size="10"> </label>
+						<label>CPF: <input type="text" name="cpf" size="12"> </label>&nbsp&nbsp&nbsp&nbsp
+						<label>Sexo:  <input type="radio" NAME="sexo" VALUE="masculino"></label><label>Masculino <input type="radio" NAME="sexo" VALUE="masculino"></label><label>Feminino</label>&nbsp&nbsp&nbsp&nbsp
+						<label>Estado Civil: <input type="text" name="civil" size="20"> </label><br>
+						<label>Res: <input type="text" name="telres" size="10"> </label>
+						<label>Cel: <input type="text" name="telcel" size="10"> </label>
+						<label>Email: <input type="text" name="email" size="50"> </label>
+						<label>Nacionalidade: <input type="text" name="nacionalidade" size="15"> </label>
+						<label>Naturalidade: <input type="text" name="nacionalidade" size="15"> </label><br>
+						<label>Passatempos: <br></label>
 						<textarea cols=40 rows=5 name="passatempos"></textarea>
 			</fieldset>
 			<br>
 
 			<fieldset>
 				<legend><b>Endereço</b></legend>
-					<label>Lograd.: <input type="text" name="endereco" size="60" maxlenght="60"> </label>
-					<label>Num.: <input type="text" name="numero" size="8" maxlenght="8"> </label>
-					<label>Compl.: <input type="text" name="complemento" size="20" maxlenght="20"> </label>
-					<label>Bairro: <input type="text" name="bairro" size="20" maxlenght="20"> </label>
-					<label>Cidade: <input type="text" name="cidade" size="15" maxlenght="15"> </label>
-					<label>CEP: <input type="text" name="cep" size="10" maxlenght="9"> </label> 
+					<label>Lograd.: <input type="text" name="endereco" size="60"> </label>
+					<label>Num.: <input type="text" name="numero" size="8"> </label>
+					<label>Compl.: <input type="text" name="complemento" size="20"> </label>
+					<label>Bairro: <input type="text" name="bairro" size="20"> </label>
+					<label>Cidade: <input type="text" name="cidade" size="15"> </label>
+					<label>CEP: <input type="text" name="cep" size="10"> </label> 
 					<label>Estado: <select name="estado">
 					<optgroup>
 						<option>AC</option>
@@ -97,19 +97,19 @@
 
 			<fieldset>
 				<legend><b>Escolaridade</b></legend>
-					<label>Grau de Escolaridade: <br>
-								<input type="radio" name="escola" value="medio">Ensino Médio<br>
-								<input type="radio" name="escola" value="supinc">Ensino Superior/Incompleto</label>
+					<label>Grau de Escolaridade: <br></label>
+								<input type="radio" name="escola" value="medio"><label>Ensino Médio<br></label>
+								<input type="radio" name="escola" value="supinc"><label>Ensino Superior/Incompleto</label>
 
-								<br><input type="radio" name="escola" value="supcom">Ensino Superior/Completo<br>
-								<input type="radio" name="escola" value="especiali">Especialização</label>
+								<br><input type="radio" name="escola" value="supcom"><label>Ensino Superior/Completo<br></label>
+								<input type="radio" name="escola" value="especiali"><label>Especialização</label>
 
-								<br><input type="radio" name="escola" value="mestrado">Mestrado<br>
-								<input type="radio" name="escola" value="doutorado">Doutorado</label><br><br>
+								<br><input type="radio" name="escola" value="mestrado"><label>Mestrado<br></label>
+								<input type="radio" name="escola" value="doutorado"><label>Doutorado</label><br><br>
 					
-					<label>Instituição: <input type="text" name="instituicao" size="95" maxlenght="60"> </label>
-					<label>Curso: <input type="text" name="curso" size="100" maxlenght="60"> </label>
-					<label>Estado: <select name="estado">
+					<label>Instituição: <input type="text" name="instituicao" size="95"> </label>
+					<label>Curso: <input type="text" name="curso" size="100"> </label>
+					<label>Estado: </label><select name="estado"></label>
 					<optgroup>
 						<option>AC</option>
 						<option>AL</option>
@@ -139,25 +139,25 @@
 						<option>SE</option>	
 						<option>TO</option>
 					</optgroup>
-					</select> </label><br>
-					<label>Cidade: <input type="text" name="cidade" size="15" maxlenght="15"> </label>
+					</select> <br>
+					<label>Cidade: <input type="text" name="cidade" size="15"> </label>
 					<label>Mês/Ano de conclusão: <input type="month" name="mes"></label>
 			</fieldset>
 			<br>
 
 			<fieldset>
 				<legend><b>Dados Profissionais</b></legend>
-					<label>Forma de Contratação: <br>
-						<input type="radio" name="contrato" value="estag">Estagiário<br>
-						<input type="radio" name="contrato" value="aprendiz">Jovem Aprendiz</label><br>
-						<input type="radio" name="contrato" value="contr">Contratado<br>
-						<input type="radio" name="contrato" value="registr">Registrado</label><br><br>
-					<label>Empresa: <input type="text" name="empresa" size="107" maxlenght="60"> </label>
-					<label>Setor: <input type="text" name="setor" size="111" maxlenght="60"> </label>
-					<label>Cargo: <input type="text" name="cargo" size="100" maxlenght="60"> </label>
+					<label>Forma de Contratação: <br></label>
+						<input type="radio" name="contrato" value="estag"><label>Estagiário<br></label>
+						<input type="radio" name="contrato" value="aprendiz"><label>Jovem Aprendiz</label><br>
+						<input type="radio" name="contrato" value="contr"><label>Contratado<br></label>
+						<input type="radio" name="contrato" value="registr"><label>Registrado</label><br><br>
+					<label>Empresa: <input type="text" name="empresa" size="107"> </label>
+					<label>Setor: <input type="text" name="setor" size="111"> </label>
+					<label>Cargo: <input type="text" name="cargo" size="100"> </label>
 					<label>Entrada: <input type="date" name="entrada"></label>&nbsp&nbsp
 					<label>Saída: <input type="date" name="saida"></label><br>
-					<label>Descrição do cargo: <br><textarea cols=40 rows=5 name="descrcargo"></textarea>
+					<label>Descrição do cargo: </label><br><textarea cols=40 rows=5 name="descrcargo"></textarea>
 			</fieldset>
 			<!-- <label>URL: <input type="url" name="url" id="url"></label><br> -->
 			<input type="submit">
@@ -165,7 +165,7 @@
 		</form>
 
 		<div id="footer">
-			<img src="imagens/footer.png" id="imgfoot"></img>
+			<img src="imagens/footer.png" id="imgfoot">
 		</div>
 
 	</div>
