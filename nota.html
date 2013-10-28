@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+		var not1, not2, a, p;
+		function nota() {
+			not1 = document.getElementById("nota1");
+			not2 = document.getElementById("nota2");
+			a = document.getElementById("aula");
+			p = document.getElementById("pres");
+
+			var n1 = Number(not1.value);
+			var n2 = Number(not2.value);
+			var aul = Number(a.value);
+			var pre = Number(p.value);
+
+			var media = (n1+n2)/2;
+			var freq = (pre/aul)*100;
+			if((media>=6)&&(freq>=75)){
+				alert("O aluno está aprovado com média "+media+" e frequencia "+freq+"%.");
+			}
+			if(media<6){
+				alert("O aluno está reprovado por média ("+media+")");
+			}
+			if(freq<75){
+				alert("O aluno está reprovado por frequencia ("+freq+"%)");
+			}
+			
+		}
+
+	</script>
+</head>
+
+<body>
+	<p> Notas
+	<br /><br />
+
+	Nota1:
+	<input type ="text" id ="nota1" value="" maxLength="3" />
+	<br /> <br />
+	Nota2:
+	<input type ="text" id ="nota2" value="" maxLength="3" />
+	<br /> <br />
+
+	Numero de aulas:
+	<input type ="text" id ="aula" value="" maxLength="3" />
+	<br /> <br />
+
+	Quantas aulas presente:
+	<input type ="text" id ="pres" value="" maxLength="3" />
+	<br /> <br />
+	<input type ="button" onclick ="nota()" value ="Calcular" />
+</body>
+
+</html>

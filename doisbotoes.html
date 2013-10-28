@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+		var pressObj;
+		function load() {
+			pressObj = document.getElementById("press");
+			erase();
+		}
+		function set(message) {
+			pressObj.value = message;
+			setTimeout("erase()",2000);
+		}
+		function erase() {
+			pressObj.value = "nenhum botão";
+		}
+
+		function button(){
+			document.write('<br />');
+			document.write('<input type ="button" value ="Terceiro Botão" />');
+			document.write('<br />');
+			document.write('<input type ="button" value ="Quarto Botão" />');
+			setTimeout("alert('Ok')",2000);
+		}
+
+	</script>
+</head>
+
+<body onload='load()'>
+	<p> O botão pressionado foi:
+	<input type ="text" id ="press" readonly ="X" />
+	</p>
+	<input type ="button" onclick ="button()" value ="Primeiro botão" />
+	<input type ="button" onclick ="set('Segundo')" value ="Segundo botão" />
+</body>
+
+</html>

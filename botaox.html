@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+		var botaox;
+		function load() {
+			botaox = document.getElementById("press");
+			button();
+		}
+
+
+		function button(){
+			var val = Number(botaox.value);
+
+			for ( var i=1; i <= val ; ++i )
+			{
+				document.write('<br />');
+				document.write('<input type ="button" value ="Botao '+i+'" />');
+			}
+		}
+
+	</script>
+</head>
+
+<body onload='load()'>
+	<p> Quantidade de Botões:
+	<input type ="text" id ="press" onkeyup='button()' value="" maxLength="2" />
+	</p>
+</body>
+
+</html>

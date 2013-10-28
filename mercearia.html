@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+		var macaqtde, laranjaqtde;
+		function load() {
+			macaqtde = document.getElementById("qtdemaca");
+			preco();
+
+			laranjaqtde = document.getElementById("qtdelaranja");
+			preco2();
+
+		}
+
+		var maca, macapreco, macatotal;
+
+		function preco(){
+			maca = Number(macaqtde.value);
+			macapreco = 1.30;
+
+			if(maca>12){
+				var macapreco= prompt("Digite o novo preco:");
+			}
+			
+			macatotal = maca*macapreco;
+		}
+
+
+		var laranja, laranjapreco, laranjatotal;
+		
+		function preco2(){
+			laranja = Number(laranjaqtde.value);
+			laranjapreco = 0.8;
+
+			if(laranja>20){
+				var laranjapreco= prompt("Digite o novo preco:");
+			}
+
+			laranjatotal = laranja*laranjapreco;
+
+			
+		}
+
+		function total(){
+
+			var total = macatotal+laranjatotal;
+			alert("O total de maça é "+ macatotal + ", o total de laranja é "+laranjatotal+ " e o total da compra é "+total);
+		}
+
+			
+
+	</script>
+</head>
+
+<body onload='load()'>
+	<p> Mercearia
+	<br /><br />
+	<p> Maçã
+	<br />
+	Quantidade:
+	<input type ="text" id ="qtdemaca" onkeyup='preco()' value="" maxLength="3" />
+	<br />
+	<p> Laranja
+	<br />
+	Quantidade:
+	<input type ="text" id ="qtdelaranja" onkeyup='preco2()' value="" maxLength="3" />
+	<br />
+	<input type ="button" onclick ="total()" value ="Total" />
+</body>
+
+</html>

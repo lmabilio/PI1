@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+		var tabVal, tab1;
+		function load( ) {
+			tabVal = document.getElementById("tabVal");
+  			tab1 = document.getElementById("tab1");
+  			tabmulti();
+		}
+
+		function tabmulti() 
+		{
+			tab1.value = "";
+			var val = Number(tabVal.value), line;
+
+			for ( var i=1; i <= 10 ; ++i )
+			{
+				line= val + " X " + i + " = " + ( val * i );
+				tab1.value += line + "\n";
+
+			}
+			
+		}
+
+		function tabsoma() 
+		{
+			tab1.value = "";
+			var val = Number(tabVal.value), line;
+
+			for ( var i=1; i <= 10 ; ++i )
+			{
+				line= val + " + " + i + " = " + ( val + i );
+				tab1.value += line + "\n";
+
+			}
+			
+		}
+
+		function tabsub() 
+		{
+			tab1.value = "";
+			var val = Number(tabVal.value), line;
+
+			for ( var i=1; i <= 10 ; ++i )
+			{
+				line= val + " - " + i + " = " + ( val - i );
+				tab1.value += line + "\n";
+
+			}
+			
+		}
+
+		function tabdiv() 
+		{
+			tab1.value = "";
+			var val = Number(tabVal.value), line;
+
+			for ( var i=1; i <= 10 ; ++i )
+			{
+				line= val + " / " + i + " = " + ( val / i );
+				tab1.value += line + "\n";
+
+			}
+			
+		}
+
+	</script>
+</head>
+
+<body onload='load()'>
+	Tabuada do
+	<input type="text" id="tabVal" value="" maxLength="2" />
+	<br /><br />
+
+	<p> Escolha a tabuada
+	<br><br>
+	<input type ="button" onclick ="tabmulti()" value ="Tabuada(*)" />
+	<input type ="button" onclick ="tabsoma()" value ="Tabuada(+)" />
+	<input type ="button" onclick ="tabsub()" value ="Tabuada(-)" />
+	<input type ="button" onclick ="tabdiv()" value ="Tabuada(/)" />
+
+	<br><br>
+	<textarea id="tab1" rows="10" cols="15" readonly="">
+	</textarea>
+
+</body>
+
+
+</html>

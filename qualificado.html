@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+		var pressobj1, pressobj2, pressobj3, pressobj4;
+		function load() {
+			pressobj1 = document.getElementById("press1");
+			pressobj2 = document.getElementById("press2");
+			pressobj3 = document.getElementById("press3");
+			pressobj4 = document.getElementById("press4");
+			qualificado();
+		}
+
+
+		function qualificado(){
+			var val1 = (pressobj1.value);
+			var val2 = Number(pressobj2.value);
+			var val3 = Number(pressobj3.value);
+			var val4 = (pressobj4.value);
+
+
+			if((val4=='f')||(val4=='F')){
+				if((((2013-val2)>=60)||((2013-val3)>=25))||(((2013-val2)>=55)&&((2013-val3)>=20)) ) {
+					alert(val1+" está qualificada para aposentar");
+				}else{
+					alert(val1+" não está qualificada para aposentar");
+				}
+			}
+			if((val4=='m')||(val4=='M')){
+				if((((2013-val2)>=65)||((2013-val3)>=30))||(((2013-val2)>=60)&&((2013-val3)>=25)) ) {
+					alert(val1+" está qualificado para aposentar");
+				}else{
+					alert(val1+" não está qualificado para aposentar");
+				}
+			}
+
+		}
+
+	</script>
+</head>
+
+<body onload='load()'>
+	<p> Nome:
+	<input type ="text" id ="press1" value="" maxLength="50" />
+	<br />
+	Ano de Nascimento:
+	<input type ="text" id ="press2" value="" maxLength="4" />
+	<br />
+	Ano de Admissão:
+	<input type ="text" id ="press3" value="" maxLength="4" />
+	<br />
+	Sexo:
+	<input type ="text" id ="press4" onkeyup='qualificado()' value="" maxLength="1" />
+	<br />
+	</p>
+</body>
+
+</html>
