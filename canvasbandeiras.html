@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<script>
+
+
+		function alemanha(){
+			var canvas = document.getElementById("myCanvas");
+			ctx=canvas.getContext("2d");
+			
+			ctx.beginPath();
+				ctx.strokeStyle='#000';
+				ctx.lineWidth=5;
+				ctx.fillStyle='rgba(0,0,0,255)';
+				ctx.fillRect(10,10,200,45);
+			
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.lineWidth=5;
+				ctx.fillStyle='rgba(255,0,0,255)';
+				ctx.fillRect(10,55,200,45);
+
+
+			ctx.beginPath();
+				ctx.strokeStyle='#ff0';
+				ctx.lineWidth=5;
+				ctx.fillStyle='rgba(255,255,0,255)';
+				ctx.fillRect(10,100,200,45);
+
+		}
+
+
+		function belgica(){
+			var canvas = document.getElementById("myCanvas");
+			ctx=canvas.getContext("2d");
+			
+			ctx.beginPath();
+				ctx.strokeStyle='#000';
+				ctx.lineWidth=5;
+				ctx.fillStyle='rgba(0,0,0,255)';
+				ctx.fillRect(10,10,66,135);
+			
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.lineWidth=5;
+				ctx.fillStyle='rgba(255,0,0,255)';
+				ctx.fillRect(76,10,66,135);
+
+
+			ctx.beginPath();
+				ctx.strokeStyle='#ff0';
+				ctx.lineWidth=5;
+				ctx.fillStyle='rgba(255,255,0,255)';
+				ctx.fillRect(142,10,66,135);
+
+		}
+
+
+		function japao(){
+			var canvas = document.getElementById("myCanvas");
+			ctx=canvas.getContext("2d");
+			
+			ctx.beginPath();
+				ctx.strokeStyle='#000';
+				ctx.lineWidth=2;
+				ctx.fillStyle='rgba(255,255,255,255)';
+				ctx.fillRect(10,10,200,135);
+				ctx.strokeRect(9,9,202,137);
+
+			ctx.beginPath();
+				ctx.strokeStyle='#f00';
+				ctx.fillStyle='#f00';
+				ctx.arc(107,77,35,0,Math.PI*2, true);
+				ctx.fill();
+				ctx.stroke();
+
+		}
+
+	</script>
+</head>
+
+<body>
+	<canvas id="myCanvas" width="400" height="200"></canvas><br>
+	<input type ="button" onclick ="alemanha()" value ="Alemanha" />
+	<input type ="button" onclick ="belgica()" value ="Belgica" />
+	<input type ="button" onclick ="japao()" value ="Japao" />
+	
+
+</body>
+
+</html>
