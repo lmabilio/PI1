@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+		<title> Poltrona </title>
+		<script type="text/javascript">
+
+			function mudar(numero, nome){
+				if(!nome)
+					nome = prompt('Digite o nome do passageiro:');
+
+				document.getElementById(numero).src = 'poltronavermelha.JPG';
+				document.getElementById(numero).title = nome;
+				document.getElementById(numero).onclick = '';
+				
+				localStorage.setItem(numero, nome);
+			}
+			
+			function zerar(){
+				var i;
+				for(i=1;i<=4;i++){
+					if(localStorage.getItem(i)){
+						var nome = localStorage.getItem(i);
+						mudar(i, nome);
+					}
+				}
+			}
+
+		</script>
+</head>
+
+<body onload="zerar()">
+	<img src='poltronaverde.jpg' id='1' onclick='mudar(1)' width= 100 height=200 title = 'Livre'>
+	<img src='poltronaverde.jpg' id='2' onclick='mudar(2)' width= 100 height=200 title = 'Livre'>
+	<img src='poltronaverde.jpg' id='3' onclick='mudar(3)' width= 100 height=200 title = 'Livre'>
+	<img src='poltronaverde.jpg' id='4' onclick='mudar(4)' width= 100 height=200 title = 'Livre'>
+</body>
+
+</html>
+
